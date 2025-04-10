@@ -90,24 +90,21 @@ int main()
 
 int insertSortedLL(LinkedList *ll, int item)
 {
-	ListNode *newNode, *cur, *prev; // 새로운 노드, 현재 노드, 이전 노드를 저장할 ListNode 구조체 타입 선언
-
-	// 새 노드 생성
-	newNode = (ListNode *)malloc(sizeof(ListNode));
+	ListNode *newNode = (ListNode *) malloc(sizeof(ListNode));
 	if (newNode == NULL) return -1;
 	newNode->item = item;
 	newNode->next = NULL;
 
-	// 빈 리스트이거나 맨 앞에 삽입할 경우
-	if (ll->head == NULL || item <= ll ->head->item) {
+	// 리스트가 비어 있는 상태 고려
+	if (ll->head == NULL || item <= ll->head->item) {
 		newNode->next = ll->head;
 		ll->head = newNode;
 		ll->size++;
 		return 0;
 	}
 
-	prev = ll->head;
-	cur = ll->head->next;
+	ListNode *prev = ll->head;
+	ListNode *cur = ll->head->next;
 
 	while (cur != NULL && cur->item < item) {
 		prev = cur;
@@ -118,6 +115,7 @@ int insertSortedLL(LinkedList *ll, int item)
 	prev->next = newNode;
 	ll->size++;
 	return 0;
+
 }
 
 ///////////////////////////////////////////////////////////////////////////////////

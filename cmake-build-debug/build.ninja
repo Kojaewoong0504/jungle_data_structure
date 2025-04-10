@@ -54,16 +54,18 @@ build CMakeFiles/c_programing.dir/library.c.o: C_COMPILER__c_programing_unscanne
   FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/c_programing.dir
   OBJECT_FILE_DIR = CMakeFiles/c_programing.dir
-  TARGET_COMPILE_PDB = CMakeFiles/c_programing.dir/c_programing.pdb
-  TARGET_PDB = libc_programing.pdb
 
 build CMakeFiles/c_programing.dir/main.c.o: C_COMPILER__c_programing_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/main.c || cmake_object_order_depends_target_c_programing
   DEP_FILE = CMakeFiles/c_programing.dir/main.c.o.d
   FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/c_programing.dir
   OBJECT_FILE_DIR = CMakeFiles/c_programing.dir
-  TARGET_COMPILE_PDB = CMakeFiles/c_programing.dir/c_programing.pdb
-  TARGET_PDB = libc_programing.pdb
+
+build CMakeFiles/c_programing.dir/pointer_study/pointer_study1.c.o: C_COMPILER__c_programing_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/pointer_study/pointer_study1.c || cmake_object_order_depends_target_c_programing
+  DEP_FILE = CMakeFiles/c_programing.dir/pointer_study/pointer_study1.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/c_programing.dir
+  OBJECT_FILE_DIR = CMakeFiles/c_programing.dir/pointer_study
 
 
 # =============================================================================
@@ -73,15 +75,201 @@ build CMakeFiles/c_programing.dir/main.c.o: C_COMPILER__c_programing_unscanned_D
 #############################################
 # Link the static library libc_programing.a
 
-build libc_programing.a: C_STATIC_LIBRARY_LINKER__c_programing_Debug CMakeFiles/c_programing.dir/library.c.o CMakeFiles/c_programing.dir/main.c.o
+build libc_programing.a: C_STATIC_LIBRARY_LINKER__c_programing_Debug CMakeFiles/c_programing.dir/library.c.o CMakeFiles/c_programing.dir/main.c.o CMakeFiles/c_programing.dir/pointer_study/pointer_study1.c.o
   ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles/c_programing.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/c_programing.dir/c_programing.pdb
   TARGET_FILE = libc_programing.a
-  TARGET_PDB = libc_programing.pdb
+  TARGET_PDB = c_programing.a.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target main_all
+
+
+#############################################
+# Order-only phony target for main_all
+
+build cmake_object_order_depends_target_main_all: phony || .
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q1_F_BST.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Search_Tree/Q1_F_BST.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q1_F_BST.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q2_F_BST.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Search_Tree/Q2_F_BST.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q2_F_BST.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q3_F_BST.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Search_Tree/Q3_F_BST.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q3_F_BST.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q4_F_BST.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Search_Tree/Q4_F_BST.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q4_F_BST.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q5_F_BST.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Search_Tree/Q5_F_BST.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q5_F_BST.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q1_E_BT.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Tree/Q1_E_BT.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q1_E_BT.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q2_E_BT.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Tree/Q2_E_BT.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q2_E_BT.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q3_E_BT.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Tree/Q3_E_BT.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q3_E_BT.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q4_E_BT.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Tree/Q4_E_BT.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q4_E_BT.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q5_E_BT.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Tree/Q5_E_BT.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q5_E_BT.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q6_E_BT.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Tree/Q6_E_BT.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q6_E_BT.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q7_E_BT.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Tree/Q7_E_BT.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q7_E_BT.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q8_E_BT.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Tree/Q8_E_BT.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q8_E_BT.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q1_A_LL.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Linked_List/Q1_A_LL.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q1_A_LL.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q2_A_LL.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Linked_List/Q2_A_LL.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q2_A_LL.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q3_A_LL.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Linked_List/Q3_A_LL.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q3_A_LL.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q4_A_LL.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Linked_List/Q4_A_LL.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q4_A_LL.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q5_A_LL.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Linked_List/Q5_A_LL.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q5_A_LL.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q6_A_LL.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Linked_List/Q6_A_LL.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q6_A_LL.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q7_A_LL.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Linked_List/Q7_A_LL.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q7_A_LL.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q1_C_SQ.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Stack_and_Queue/Q1_C_SQ.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q1_C_SQ.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q2_C_SQ.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Stack_and_Queue/Q2_C_SQ.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q2_C_SQ.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q3_C_SQ.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Stack_and_Queue/Q3_C_SQ.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q3_C_SQ.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q4_C_SQ.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Stack_and_Queue/Q4_C_SQ.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q4_C_SQ.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q5_C_SQ.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Stack_and_Queue/Q5_C_SQ.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q5_C_SQ.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q6_C_SQ.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Stack_and_Queue/Q6_C_SQ.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q6_C_SQ.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue
+
+build CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q7_C_SQ.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Stack_and_Queue/Q7_C_SQ.c || cmake_object_order_depends_target_main_all
+  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q7_C_SQ.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target main_all
+
+
+#############################################
+# Link the executable main_all
+
+build main_all: C_EXECUTABLE_LINKER__main_all_Debug CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q1_F_BST.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q2_F_BST.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q3_F_BST.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q4_F_BST.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q5_F_BST.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q1_E_BT.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q2_E_BT.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q3_E_BT.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q4_E_BT.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q5_E_BT.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q6_E_BT.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q7_E_BT.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q8_E_BT.c.o CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q1_A_LL.c.o CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q2_A_LL.c.o CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q3_A_LL.c.o CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q4_A_LL.c.o CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q5_A_LL.c.o CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q6_A_LL.c.o CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q7_A_LL.c.o CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q1_C_SQ.c.o CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q2_C_SQ.c.o CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q3_C_SQ.c.o CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q4_C_SQ.c.o CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q5_C_SQ.c.o CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q6_C_SQ.c.o CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q7_C_SQ.c.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk
+  OBJECT_DIR = CMakeFiles/main_all.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = main_all
+  TARGET_PDB = main_all.dbg
 
 
 #############################################
@@ -119,7 +307,7 @@ build c_programing: phony libc_programing.a
 #############################################
 # Folder: /Users/gojaewoong/Desktop/jungle/jungle_data_structure/cmake-build-debug
 
-build all: phony libc_programing.a
+build all: phony libc_programing.a main_all
 
 # =============================================================================
 # Built-in targets
@@ -128,14 +316,14 @@ build all: phony libc_programing.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCompilerSupport.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CrayClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/OrangeC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/TIClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Tasking-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/gojaewoong/Desktop/jungle/jungle_data_structure/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/gojaewoong/Desktop/jungle/jungle_data_structure/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCompilerSupport.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CrayClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/OrangeC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/TIClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Tasking-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/gojaewoong/Desktop/jungle/jungle_data_structure/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/gojaewoong/Desktop/jungle/jungle_data_structure/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
 
 
 #############################################

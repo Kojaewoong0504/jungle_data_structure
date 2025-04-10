@@ -6,5 +6,8 @@
 
 
 int main(void) {
-    printf("hello Wold!\n");
+    int a = 5;
+    int *p = &a;
+    *p = 10;
+    printf("%d\n", a);
 }

@@ -80,3 +80,14 @@ dkms.conf
 *.ncb
 *.sdf
 *.opensdf
+
+# CLion & JetBrains IDE
+cmake-build-*/
+# CMake 관련 빌드 캐시
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# 빌드 결과물
+*.iml

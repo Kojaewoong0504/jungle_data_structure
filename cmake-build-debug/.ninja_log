@@ -1,0 +1,6 @@
+# ninja log v6
+1	35	1743669003152314053	CMakeFiles/c_programing.dir/library.c.o	6182f69d52c84335
+35	57	1743669003186894561	libc_programing.a	85b1d450fe87ae0a
+2	45	1744260663078096438	CMakeFiles/c_programing.dir/library.c.o	d70af221b0b62e79
+1	21	1744260667532059184	CMakeFiles/c_programing.dir/main.c.o	d46b7c1dcf4c961
+21	47	1744260667552635036	libc_programing.a	a6e6fd7e28715682

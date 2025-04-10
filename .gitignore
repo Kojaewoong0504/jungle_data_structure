@@ -7,8 +7,14 @@
 *.obj
 *.elf
 
-# Linker output
+# 빌드 파일
+*.lo
 *.ilk
+*.tmp
+*.log
+
+
+# Linker output
 *.map
 *.exp
 
@@ -20,7 +26,6 @@
 *.lib
 *.a
 *.la
-*.lo
 
 # Shared objects (inc. Windows DLLs)
 *.dll
@@ -50,3 +55,28 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# 디펜던시/메타파일
+*.dep
+
+# 백업 파일
+*~
+*.swp
+*.bak
+*.old
+
+
+# IDE 및 편집기 관련
+.vscode/
+.idea/
+*.code-workspace
+
+# macOS 특화
+.DS_Store
+
+# 기타 사용자 설정 파일
+*.user
+*.suo
+*.ncb
+*.sdf
+*.opensdf

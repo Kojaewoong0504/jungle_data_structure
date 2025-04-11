@@ -88,6 +88,8 @@ CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 Makefile
+/cmake-build-debug/
 
 # 빌드 결과물
 *.iml
+/build//cmake-build-debug/

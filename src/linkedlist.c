@@ -96,3 +96,7 @@ void free_list(Node* head) {
         free(temp);
     }
 }
+
+void insert_at(Node** head, int index, int data) {
+    
+}

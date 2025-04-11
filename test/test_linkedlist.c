@@ -70,7 +70,6 @@ static char * test_find_node() {
     return 0;
 }
 
-/*
 static char * test_insert_at() {
     Node* head = NULL;
     insert_end(&head, 1);
@@ -83,6 +82,8 @@ static char * test_insert_at() {
     free_list(head);
     return 0;
 }
+
+/*
 
 static char * test_reverse_list() {
     Node* head = NULL;
@@ -118,7 +119,7 @@ static char * all_tests() {
     mu_run_test(test_insert_front);
     mu_run_test(test_delete_node);
     mu_run_test(test_find_node);
-    // mu_run_test(test_insert_at);
+    mu_run_test(test_insert_at);
     // mu_run_test(test_reverse_list);
     // mu_run_test(test_sort_list);
     return 0;

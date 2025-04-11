@@ -103,7 +103,36 @@ int main()
 
 int isStackPairwiseConsecutive(Stack *s)
 {
-  /* add your code here */
+	if (s == NULL || isEmptyStack(s)) return 1;
+
+	if (s->ll.size % 2 != 0)
+		return 0; // 홀수 크기면 바로 false
+
+	Stack temp;
+	temp.ll.head = NULL;
+	temp.ll.size = 0;
+
+	int isConsecutive = 1;
+
+	while (s->ll.size >= 2) {
+		int first = pop(s);
+		int second = pop(s);
+
+		if (abs(first - second) != 1) {
+			isConsecutive = 0;
+		}
+
+		push(&temp, second);
+		push(&temp, first);
+	}
+
+
+	// 다시 복원: temp → s
+	while (!isEmptyStack(&temp)) {
+		push(s, pop(&temp));
+	}
+
+	return isConsecutive;
 }
 
 //////////////////////////////////////////////////////////////////////////////////

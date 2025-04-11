@@ -103,6 +103,39 @@ int main()
 void frontBackSplitLinkedList(LinkedList *ll, LinkedList *resultFrontList, LinkedList *resultBackList)
 {
 	/* add your code here */
+	/*
+	 *현재 아래 코드는 기존 링크드리스트 ll에 포함된 노드들을 재배치하여 free 중 오류 발생
+	if (ll == NULL || ll->head == NULL) return;
+
+	ListNode *cur = ll->head;
+	ListNode *prev = NULL;
+	int size = (ll->size + 1) / 2;
+
+	resultFrontList->head = ll->head;
+	for (int i = 0; i < size; i++) {
+		prev = cur;
+		cur = cur->next;
+	}
+	prev->next = NULL;
+	resultFrontList->size = size;
+
+	resultBackList->head = cur;
+	resultBackList->size = ll->size - size;
+	*/
+	if (ll == NULL || ll->head == NULL) return;
+
+	int frontSize = (ll->size + 1) / 2;
+
+	ListNode *cur = ll->head;
+	for (int i = 0; i < frontSize && cur != NULL; i++) {
+		insertNode(resultFrontList, resultFrontList->size, cur->item);
+		cur = cur->next;
+	}
+
+	while (cur != NULL) {
+		insertNode(resultBackList, resultBackList->size, cur->item);
+		cur = cur->next;
+	}
 }
 
 ///////////////////////////////////////////////////////////////////////////////////

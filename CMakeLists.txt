@@ -3,14 +3,25 @@ project(c_programing C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_library(c_programing STATIC library.c
-        main.c
-        pointer_study/pointer_study1.c)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
-# 모든 .c 파일을 재귀적으로 수집
-file(GLOB_RECURSE ALL_SRC_FILES
-        "${CMAKE_SOURCE_DIR}/Data-Structures-master/*.c"
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
+add_library(linkedlist STATIC
+        src/linkedlist.c
 )
 
-# 하나의 실행 파일로 만들기 (모든 파일 포함)
-add_executable(main_all ${ALL_SRC_FILES})
+# 🔹 main 실행용
+add_executable(main_exec
+        main.c
+)
+
+# 🔹 테스트 실행용 (minunit 기반)
+add_executable(test_linkedlist
+        test/test_linkedlist.c
+        include/minunit.h
+)
+
+# 🔗 실행 파일이 라이브러리를 사용할 수 있게 링크
+target_link_libraries(main_exec linkedlist)
+target_link_libraries(test_linkedlist linkedlist)

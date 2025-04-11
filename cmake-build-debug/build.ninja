@@ -41,235 +41,103 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/gojaewoong/Desktop/jungle/jungle_data_structure/cmake-build-debug/
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target c_programing
+# Object build statements for STATIC_LIBRARY target linkedlist
 
 
 #############################################
-# Order-only phony target for c_programing
+# Order-only phony target for linkedlist
 
-build cmake_object_order_depends_target_c_programing: phony || .
+build cmake_object_order_depends_target_linkedlist: phony || .
 
-build CMakeFiles/c_programing.dir/library.c.o: C_COMPILER__c_programing_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/library.c || cmake_object_order_depends_target_c_programing
-  DEP_FILE = CMakeFiles/c_programing.dir/library.c.o.d
+build CMakeFiles/linkedlist.dir/src/linkedlist.c.o: C_COMPILER__linkedlist_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/src/linkedlist.c || cmake_object_order_depends_target_linkedlist
+  DEP_FILE = CMakeFiles/linkedlist.dir/src/linkedlist.c.o.d
   FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/c_programing.dir
-  OBJECT_FILE_DIR = CMakeFiles/c_programing.dir
-
-build CMakeFiles/c_programing.dir/main.c.o: C_COMPILER__c_programing_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/main.c || cmake_object_order_depends_target_c_programing
-  DEP_FILE = CMakeFiles/c_programing.dir/main.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/c_programing.dir
-  OBJECT_FILE_DIR = CMakeFiles/c_programing.dir
-
-build CMakeFiles/c_programing.dir/pointer_study/pointer_study1.c.o: C_COMPILER__c_programing_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/pointer_study/pointer_study1.c || cmake_object_order_depends_target_c_programing
-  DEP_FILE = CMakeFiles/c_programing.dir/pointer_study/pointer_study1.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/c_programing.dir
-  OBJECT_FILE_DIR = CMakeFiles/c_programing.dir/pointer_study
+  INCLUDES = -I/Users/gojaewoong/Desktop/jungle/jungle_data_structure/include
+  OBJECT_DIR = CMakeFiles/linkedlist.dir
+  OBJECT_FILE_DIR = CMakeFiles/linkedlist.dir/src
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target c_programing
+# Link build statements for STATIC_LIBRARY target linkedlist
 
 
 #############################################
-# Link the static library libc_programing.a
+# Link the static library liblinkedlist.a
 
-build libc_programing.a: C_STATIC_LIBRARY_LINKER__c_programing_Debug CMakeFiles/c_programing.dir/library.c.o CMakeFiles/c_programing.dir/main.c.o CMakeFiles/c_programing.dir/pointer_study/pointer_study1.c.o
+build liblinkedlist.a: C_STATIC_LIBRARY_LINKER__linkedlist_Debug CMakeFiles/linkedlist.dir/src/linkedlist.c.o
   ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = CMakeFiles/c_programing.dir
+  OBJECT_DIR = CMakeFiles/linkedlist.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = libc_programing.a
-  TARGET_PDB = c_programing.a.dbg
+  TARGET_FILE = liblinkedlist.a
+  TARGET_PDB = linkedlist.a.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target main_all
+# Object build statements for EXECUTABLE target main_exec
 
 
 #############################################
-# Order-only phony target for main_all
+# Order-only phony target for main_exec
 
-build cmake_object_order_depends_target_main_all: phony || .
+build cmake_object_order_depends_target_main_exec: phony || cmake_object_order_depends_target_linkedlist
 
-build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q1_F_BST.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Search_Tree/Q1_F_BST.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q1_F_BST.c.o.d
+build CMakeFiles/main_exec.dir/main.c.o: C_COMPILER__main_exec_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/main.c || cmake_object_order_depends_target_main_exec
+  DEP_FILE = CMakeFiles/main_exec.dir/main.c.o.d
   FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q2_F_BST.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Search_Tree/Q2_F_BST.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q2_F_BST.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q3_F_BST.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Search_Tree/Q3_F_BST.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q3_F_BST.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q4_F_BST.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Search_Tree/Q4_F_BST.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q4_F_BST.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q5_F_BST.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Search_Tree/Q5_F_BST.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q5_F_BST.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q1_E_BT.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Tree/Q1_E_BT.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q1_E_BT.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q2_E_BT.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Tree/Q2_E_BT.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q2_E_BT.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q3_E_BT.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Tree/Q3_E_BT.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q3_E_BT.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q4_E_BT.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Tree/Q4_E_BT.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q4_E_BT.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q5_E_BT.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Tree/Q5_E_BT.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q5_E_BT.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q6_E_BT.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Tree/Q6_E_BT.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q6_E_BT.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q7_E_BT.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Tree/Q7_E_BT.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q7_E_BT.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q8_E_BT.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Binary_Tree/Q8_E_BT.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q8_E_BT.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q1_A_LL.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Linked_List/Q1_A_LL.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q1_A_LL.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q2_A_LL.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Linked_List/Q2_A_LL.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q2_A_LL.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q3_A_LL.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Linked_List/Q3_A_LL.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q3_A_LL.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q4_A_LL.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Linked_List/Q4_A_LL.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q4_A_LL.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q5_A_LL.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Linked_List/Q5_A_LL.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q5_A_LL.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q6_A_LL.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Linked_List/Q6_A_LL.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q6_A_LL.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q7_A_LL.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Linked_List/Q7_A_LL.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q7_A_LL.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Linked_List
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q1_C_SQ.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Stack_and_Queue/Q1_C_SQ.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q1_C_SQ.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q2_C_SQ.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Stack_and_Queue/Q2_C_SQ.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q2_C_SQ.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q3_C_SQ.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Stack_and_Queue/Q3_C_SQ.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q3_C_SQ.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q4_C_SQ.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Stack_and_Queue/Q4_C_SQ.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q4_C_SQ.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q5_C_SQ.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Stack_and_Queue/Q5_C_SQ.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q5_C_SQ.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q6_C_SQ.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Stack_and_Queue/Q6_C_SQ.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q6_C_SQ.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue
-
-build CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q7_C_SQ.c.o: C_COMPILER__main_all_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/Data-Structures-master/Stack_and_Queue/Q7_C_SQ.c || cmake_object_order_depends_target_main_all
-  DEP_FILE = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q7_C_SQ.c.o.d
-  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/main_all.dir
-  OBJECT_FILE_DIR = CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue
+  INCLUDES = -I/Users/gojaewoong/Desktop/jungle/jungle_data_structure/include
+  OBJECT_DIR = CMakeFiles/main_exec.dir
+  OBJECT_FILE_DIR = CMakeFiles/main_exec.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target main_all
+# Link build statements for EXECUTABLE target main_exec
 
 
 #############################################
-# Link the executable main_all
+# Link the executable bin/main_exec
 
-build main_all: C_EXECUTABLE_LINKER__main_all_Debug CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q1_F_BST.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q2_F_BST.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q3_F_BST.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q4_F_BST.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Search_Tree/Q5_F_BST.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q1_E_BT.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q2_E_BT.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q3_E_BT.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q4_E_BT.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q5_E_BT.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q6_E_BT.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q7_E_BT.c.o CMakeFiles/main_all.dir/Data-Structures-master/Binary_Tree/Q8_E_BT.c.o CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q1_A_LL.c.o CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q2_A_LL.c.o CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q3_A_LL.c.o CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q4_A_LL.c.o CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q5_A_LL.c.o CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q6_A_LL.c.o CMakeFiles/main_all.dir/Data-Structures-master/Linked_List/Q7_A_LL.c.o CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q1_C_SQ.c.o CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q2_C_SQ.c.o CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q3_C_SQ.c.o CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q4_C_SQ.c.o CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q5_C_SQ.c.o CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q6_C_SQ.c.o CMakeFiles/main_all.dir/Data-Structures-master/Stack_and_Queue/Q7_C_SQ.c.o
+build bin/main_exec: C_EXECUTABLE_LINKER__main_exec_Debug CMakeFiles/main_exec.dir/main.c.o | liblinkedlist.a || liblinkedlist.a
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk
-  OBJECT_DIR = CMakeFiles/main_all.dir
+  LINK_LIBRARIES = liblinkedlist.a
+  OBJECT_DIR = CMakeFiles/main_exec.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = main_all
-  TARGET_PDB = main_all.dbg
+  TARGET_FILE = bin/main_exec
+  TARGET_PDB = main_exec.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target test_linkedlist
+
+
+#############################################
+# Order-only phony target for test_linkedlist
+
+build cmake_object_order_depends_target_test_linkedlist: phony || cmake_object_order_depends_target_linkedlist
+
+build CMakeFiles/test_linkedlist.dir/test/test_linkedlist.c.o: C_COMPILER__test_linkedlist_unscanned_Debug /Users/gojaewoong/Desktop/jungle/jungle_data_structure/test/test_linkedlist.c || cmake_object_order_depends_target_test_linkedlist
+  DEP_FILE = CMakeFiles/test_linkedlist.dir/test/test_linkedlist.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/gojaewoong/Desktop/jungle/jungle_data_structure/include
+  OBJECT_DIR = CMakeFiles/test_linkedlist.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_linkedlist.dir/test
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target test_linkedlist
+
+
+#############################################
+# Link the executable bin/test_linkedlist
+
+build bin/test_linkedlist: C_EXECUTABLE_LINKER__test_linkedlist_Debug CMakeFiles/test_linkedlist.dir/test/test_linkedlist.c.o | liblinkedlist.a || liblinkedlist.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk
+  LINK_LIBRARIES = liblinkedlist.a
+  OBJECT_DIR = CMakeFiles/test_linkedlist.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = bin/test_linkedlist
+  TARGET_PDB = test_linkedlist.dbg
 
 
 #############################################
@@ -297,7 +165,11 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build c_programing: phony libc_programing.a
+build linkedlist: phony liblinkedlist.a
+
+build main_exec: phony bin/main_exec
+
+build test_linkedlist: phony bin/test_linkedlist
 
 # =============================================================================
 # Folder targets.
@@ -307,7 +179,7 @@ build c_programing: phony libc_programing.a
 #############################################
 # Folder: /Users/gojaewoong/Desktop/jungle/jungle_data_structure/cmake-build-debug
 
-build all: phony libc_programing.a main_all
+build all: phony liblinkedlist.a bin/main_exec bin/test_linkedlist
 
 # =============================================================================
 # Built-in targets

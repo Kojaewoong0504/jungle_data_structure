@@ -98,5 +98,83 @@ void free_list(Node* head) {
 }
 
 void insert_at(Node** head, int index, int data) {
-    
+    Node* newNode = create_node(data);
+
+    if (index == 0){
+        newNode->next = *head;
+        *head = newNode;
+        return;
+    }
+
+    int count = 0;
+    Node* cur = *head;
+
+    while (cur != NULL && count < index - 1) {
+        cur = cur->next;
+        count++;
+    }
+    // index가 리스트 길이보다 클 경우 처리
+    if (cur == NULL) {
+        free(newNode);  // 사용 안 하므로 메모리 해제
+        return;
+    }
+    newNode->next = cur->next;
+    cur->next = newNode;
+}
+
+void reverse_list(Node** head) {
+    if (*head == NULL) return;
+
+    Node *prev = NULL;
+    Node *cur = *head;
+    Node *next = NULL;
+
+    while (cur != NULL) {
+        next = cur->next;
+        cur->next = prev;
+        prev = cur;
+        cur = next;
+    }
+    *head = prev;
+}
+
+
+Node* merge(Node *left, Node *right) {
+    Node dummy;
+    dummy.next = NULL;
+    Node* tail = &dummy;
+
+    while (left && right) {
+        if (left->data < right->data) {
+            tail->next = left;
+            left = left->next;
+        }else {
+            tail->next = right;
+            right = right->next;
+        }
+        tail = tail->next;
+    }
+    if (left != NULL) tail->next = left;
+    if (right != NULL) tail->next = right;
+    return dummy.next;
+}
+
+
+void sort_list(Node** head) {
+    if (*head == NULL || (*head)->next == NULL) return;
+    Node* slow = *head;
+    Node* fast = *head;
+    while (fast->next && fast->next->next) {
+        slow = slow->next;
+        fast = fast->next->next;
+    }
+
+    Node* left = *head;
+    Node* right = slow->next;
+    slow->next = NULL;
+
+    sort_list(&left);
+    sort_list(&right);
+
+    *head = merge(left, right);
 }

@@ -20,6 +20,12 @@ add_executable(main_exec
 add_executable(test_linkedlist
         test/test_linkedlist.c
         include/minunit.h
+        include/stack.h
+        test/test_stack.c
+        src/stack.c
+        include/queue.h
+        test/test_queue.c
+        src/queue.c
 )
 
 # 🔗 실행 파일이 라이브러리를 사용할 수 있게 링크

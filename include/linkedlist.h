@@ -14,6 +14,8 @@ void insert_front(Node** head, int data);
 void delete_node(Node** head, int data);
 Node* find_node(Node* head, int data);
 void insert_at(Node** head, int index, int data);
+void reverse_list(Node** head);
+void sort_list(Node** head);
 
 
 #endif

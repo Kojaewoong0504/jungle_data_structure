@@ -9,6 +9,8 @@ Purpose: Implementing the required functions for Question 5 */
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "../../include/binary_search_tree.h"
+
 //////////////////////////////////////////////////////////////////////////////////
 
 typedef struct _btnode
@@ -105,7 +107,15 @@ int main()
 
 void mirrorTree(BTNode *node)
 {
-	/* add your code here */
+    /* add your code here */
+    if (node == NULL) return;
+    mirrorTree(node->left);
+    mirrorTree(node->right);
+
+    BTNode *temp = node->left;
+    node->left = node->right;
+    node->right = temp;
+
 }
 
 //////////////////////////////////////////////////////////////////////////////////

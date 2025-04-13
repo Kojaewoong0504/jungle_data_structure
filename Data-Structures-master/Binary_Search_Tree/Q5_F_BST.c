@@ -91,15 +91,79 @@ int main()
 
 void postOrderIterativeS2(BSTNode *root)
 {
-	 /* add your code here */
+	if (root == NULL) return;
+
+	Stack s1, s2;
+	s1.top = NULL;
+	s2.top = NULL;
+
+	push(&s1, root);
+
+	while (!isEmpty(&s1)) {
+		BSTNode *curr = pop(&s1);
+		push(&s2, curr);
+
+		if (curr->left)
+			push(&s1, curr->left);
+		if (curr->right)
+			push(&s1, curr->right);
+	}
+
+	// 이제 s2에 들어있는 순서대로 pop하면서 출력하면 후위 순회
+	while (!isEmpty(&s2)) {
+		BSTNode *curr = pop(&s2);
+		printf("%d ", curr->item);
+	}
 }
 
 /* Given a binary search tree and a key, this function
-   deletes the key and returns the new root. Make recursive function. */
+deletes the key and returns the new root. Make recursive function. */
 BSTNode* removeNodeFromTree(BSTNode *root, int value)
 {
-	/* add your code here */
+	if (root == NULL) return NULL;
+
+	if (value < root->item) {
+		root->left = removeNodeFromTree(root->left, value);
+	} else if (value > root->item) {
+		root->right = removeNodeFromTree(root->right, value);
+	} else {
+		// 삭제 대상 찾음
+		if (root->left == NULL && root->right == NULL) {
+			free(root);
+			return NULL;
+		}
+		else if (root->left == NULL) {
+			BSTNode *temp = root->right;
+			free(root);
+			return temp;
+		}
+		else if (root->right == NULL) {
+			BSTNode *temp = root->left;
+			free(root);
+			return temp;
+		}
+		else {
+			// 오른쪽 서브트리에서 최소값 노드 찾기
+			BSTNode *succParent = root;
+			BSTNode *succ = root->right;
+			while (succ->left != NULL) {
+				succParent = succ;
+				succ = succ->left;
+			}
+
+			// 후계자 값을 현재 노드에 복사
+			root->item = succ->item;
+
+			// 후계자 삭제
+			if (succParent->left == succ)
+				succParent->left = removeNodeFromTree(succ, succ->item);
+			else
+				succParent->right = removeNodeFromTree(succ, succ->item);
+		}
+	}
+	return root;
 }
+
 ///////////////////////////////////////////////////////////////////////////////
 
 void insertBSTNode(BSTNode **node, int value){

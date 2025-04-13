@@ -26,6 +26,12 @@ add_executable(test_linkedlist
         include/queue.h
         test/test_queue.c
         src/queue.c
+        include/binary_tree.h
+        test/test_binary_tree.c
+        src/binary_tree.c
+        include/binary_search_tree.h
+        test/test_binary_search_tree.c
+        src/binary_search_tree.c
 )
 
 # 🔗 실행 파일이 라이브러리를 사용할 수 있게 링크

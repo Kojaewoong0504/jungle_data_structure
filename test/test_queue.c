@@ -52,21 +52,21 @@ static char * all_tests() {
 }
 
 
-int tests_run = 0;
-int tests_failed = 0;
-
-int main(void) {
-    char *result = all_tests();
-
-    printf("========================================\n");
-    printf("Tests run: %d\n", tests_run);
-    printf("Tests passed: %d\n", tests_run - tests_failed);
-    printf("Tests failed: %d\n", tests_failed);
-
-    if (result != 0) {
-        printf("❌ TESTS FAILED\n");
-        return 1;
-    }
-    printf("✅ ALL TESTS PASSED\n");
-    return 0;
-}
+// int tests_run = 0;
+// int tests_failed = 0;
+//
+// int main(void) {
+//     char *result = all_tests();
+//
+//     printf("========================================\n");
+//     printf("Tests run: %d\n", tests_run);
+//     printf("Tests passed: %d\n", tests_run - tests_failed);
+//     printf("Tests failed: %d\n", tests_failed);
+//
+//     if (result != 0) {
+//         printf("❌ TESTS FAILED\n");
+//         return 1;
+//     }
+//     printf("✅ ALL TESTS PASSED\n");
+//     return 0;
+// }

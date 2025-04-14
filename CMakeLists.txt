@@ -32,6 +32,9 @@ add_executable(test_linkedlist
         include/binary_search_tree.h
         test/test_binary_search_tree.c
         src/binary_search_tree.c
+        include/b_tree.h
+        test/test_b_tree.c
+        src/b_tree.c
 )
 
 # 🔗 실행 파일이 라이브러리를 사용할 수 있게 링크

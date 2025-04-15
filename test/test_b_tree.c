@@ -40,7 +40,6 @@ static char* test_btree_insert() {
 }
 
 
-/*
 static char* test_btree_search() {
     BTreeNode *root = NULL;
     root = insert(root, 30);
@@ -55,6 +54,7 @@ static char* test_btree_search() {
     freeBTree(root);
     return 0;
 }
+
 
 static char* test_btree_delete() {
     BTreeNode *root = NULL;
@@ -74,13 +74,13 @@ static char* test_btree_delete() {
     freeBTree(root);
     return 0;
 }
-*/
+
 
 static char* all_tests() {
     mu_run_test(test_create_and_free_node);
     mu_run_test(test_btree_insert);
-    // mu_run_test(test_btree_search);
-    // mu_run_test(test_btree_delete);
+    mu_run_test(test_btree_search);
+    mu_run_test(test_btree_delete);
     if (tests_failed > 0) return "Some tests failed.";
     return 0;
 }

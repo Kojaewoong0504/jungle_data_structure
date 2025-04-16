@@ -155,24 +155,27 @@ int main()
 
 int insertSortedLL(LinkedList *ll, int item)
 {
-	ListNode *newNode, *cur = ll->head, *prev = NULL;
-	int index = 0;
+	ListNode *cur = ll->head; // 탐색용
+	ListNode *prev = NULL; // 삽입 시 사용
+	int index = 0; // 문제 요구 사항에 should return the index 가 있었다.
 
 	printf("\n[INSERT] Trying to insert %d into linked list...\n", item);
 
-	// 삽입 위치 탐색 + 중복 확인
+	// 삽입 위치 탐색
 	while (cur != NULL && cur->item < item) {
 		prev = cur;
 		cur = cur->next;
 		index++;
 	}
 
+	// 중복 탐지 시 -1 반환
 	if (cur != NULL && cur->item == item) {
 		printf("❌ Duplicate detected: %d already exists at index %d\n", item, index);
 		return -1;
 	}
 
-	newNode = (ListNode *) malloc(sizeof(ListNode));
+	ListNode *newNode = (ListNode *) malloc(sizeof(ListNode)); // 메모리 동적 할당
+	// 메모리 할당에 실패 한 경우 -1 반환
 	if (newNode == NULL) {
 		printf("❌ Memory allocation failed for %d\n", item);
 		return -1;
@@ -192,7 +195,7 @@ int insertSortedLL(LinkedList *ll, int item)
 	ll->size++;
 	printf("✅ Inserted %d at index %d | New size: %d\n", item, index, ll->size);
 
-	// 현재 리스트 상태 출력
+	// 현재 리스트 상태 출력 (없어도 무방함)
 	printf("📌 Current list: ");
 	ListNode *temp = ll->head;
 	while (temp != NULL) {
